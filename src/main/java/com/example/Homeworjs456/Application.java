@@ -14,7 +14,7 @@ public class Application {
 		ApplicationContext context = SpringApplication.run(Application.class, args);
 		LaptopRepository repository = context.getBean(LaptopRepository.class);
 
-		Laptop laptop = new Laptop("G580", 4, "Lenovo");
+		Laptop laptop = new Laptop(null, "G580", 4, "Lenovo");
 		repository.save(laptop);
 	}
 

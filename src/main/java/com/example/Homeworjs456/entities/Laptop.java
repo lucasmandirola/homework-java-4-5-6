@@ -16,8 +16,8 @@ public class Laptop {
     public Laptop() {
     }
 
-    public Laptop(String model, Integer ram, String brand) {
-        this.id = null;
+    public Laptop(Long id, String model, Integer ram, String brand) {
+        this.id = id;
         this.model = model;
         this.ram = ram;
         this.brand = brand;
